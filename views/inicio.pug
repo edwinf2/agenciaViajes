@@ -1,0 +1,35 @@
+extends ./layout/index
+
+block slider
+    .slider 
+        h1 Rio de Janeiro 
+        em aventura
+
+block contenido
+    main.container.mt-5 
+        h2.text-center.mb-5 Sobre Nosotros
+        .row.mb-5
+            .col-md-6
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce laoreet, diam non ultricies ultrices, leo velit semper purus, non semper ligula lectus vitae tellus. Nullam bibendum velit eget eros mollis, in mollis dui sollicitudin. Donec eleifend vulputate felis eget imperdiet. 
+                p Suspendisse potenti. Quisque et faucibus orci, id vestibulum ipsum. Ut egestas nec ante et viverra. Nunc pulvinar aliquet ultricies. Vestibulum laoreet, felis ut faucibus condimentum, neque erat vestibulum orci, vel efficitur neque risus vitae lacus. Aliquam auctor justo id purus gravida scelerisque. 
+
+            .col-md-6
+                img(src="/img/inicio_nosotros.jpg", alt="Imagen inicio", class="img-fluid")
+        include ./layout/bloque_viajes.pug
+
+    .descuento 
+        .container 
+            .row 
+                .col-md-6
+                    .contenido 
+                        h3 5% de Descuento 
+                        p.titulo Viaje a Canada 
+                        p.fecha 20 de Noviembre de 2023 - 28 de Noviembre de 2023
+                        p.precio $2,500 USD
+    
+    .container 
+        h2.mt-5.text-center Testimonial
+        include ./layout/bloque_testimoniales.pug
+
+
+    //- img(src="img/cupon.jpg", alt="cupon imagen")
